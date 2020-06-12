@@ -1,11 +1,9 @@
-# git_based_exercises
-a collection of source material for various instructional exercises for "coding"
+# trygit-4-8-plus
+A simple mock up of a modular, nested python package for group collaboration without merge conflicts on day 1
 
-## Various subdirectories designed to be standalone git repos 
-* solarsys : basic modular python code used to train 8+ individuals without merge conflicts
-  * enhance, customize by adding Issues ahead of time or creating more bugs with your standalone repo
-  * based on our solar system of 8 planets with partial keys entries for position and description
-  * potential to expand to 13 individuals with drawf planets (5) 
-  * incomplete functions to foster use of Issues and Assigments if the focus is team building
-  * continue beyond basic git usage to develop tests and other advanced software carpentry practices
+## How to Use trygit-4-8-plus 
+* `solarsys` is meant to represent a standalone repo
+* it is incomplete and imperfect by design
+* use `trygit-4-8-plus` as a template to create your custom repo to customize the experience
   
+## Instructions for Active Repo
