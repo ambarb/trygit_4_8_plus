@@ -1,5 +1,5 @@
 # trygit-4-8-plus
-A simple mock up of a modular, nested python package for group collaboration without merge conflicts on day 1
+A simple mock up of a modular, nested python package for group collaboration without 8 people editing the same file.
 
 ## How to Use trygit-4-8-plus 
 * `solarsys` is meant to represent a standalone ***repo***sitory
@@ -10,10 +10,10 @@ A simple mock up of a modular, nested python package for group collaboration wit
 *See the bottom of this document to find some common **Reference Materials**.* 
 ### Requirements
 - Each particpate has a github account
-- Each particpate has git installed on your computer or laptop
-- Each particpate has python on your computer or laptop
+- Each particpate has git installed on their computer
+- Each particpate has python on their computer 
 - Team messaging platform if working remotely
-- Link from organizer to your team's custom repo
+- Link from organizer to team's custom repo with additional instructions
 ### Abbreviations
 - Group Git webpage (**GG**)
 - Your Git webpage (**YG**)
@@ -42,28 +42,22 @@ Now your computer is setup to track your remote fork (default name `origin`) and
 2. ***GG***: If an issue is not assigned to you, then pick/create an issue and self assign.
 3. ***YC***: Type `git pull origin master`
 4. ***YC***: Type`git branch <descriptive_name-of-your-change>` to create a new branch. Type `git branch`. Where is `*`?
-3. ***YC***: Type `git checkout <branch-descriptive-name-of-your-change>` to switch to the new branch. Type `git branch`.
-5. ***YC***: Start making changes.
-4. ***YC***: Type `git add <filename.py>` to organize the files you have changed/created and would like to *commit*.
-5. ***YC***: Type `git commit -m "<quick statement descring incremental change>"`. 
-6. ***YC***: Type `git status` to make sure you have everything needed.
-7. ***YC***: Type `git push <your_fork_remote_name> <branch-descriptive-name-of-your-change>`. In this workflow `<your_fork_remote_name>` is likely `origin`.
-2. ***GG***: Click ***Pull requests*** and select ***New pull requests***. You will see a GUI to decribe what which repo/branch that you want to move your specific repo/branch into:   *BASE-Remote(Fork), Branch <<-- HEAD-Remote(Fork), Branch*.  For most cases you only need to change the branch on each side to match `<branch-descriptive-name-of-your-change>`.
-3. ***GG***: Click ***Submit*** and select 1 to 3 reviewers depending on central repo rules and complexity of your submitted *pull request* (PR). In ***Issues*** add a comment referencing your new *PR*.
-4. ***GG***: Interact with reviewers and other interested parties on github as much as possible.
+5. ***YC***: Type `git checkout <branch-descriptive-name-of-your-change>` to switch to the new branch. Type `git branch`.
+6. ***YC***: Start making changes and testing them as you go.
+7. ***YC***: Type `git add <filename.py>` to organize the files you have changed/created and would like to *commit*.
+8. ***YC***: Type `git commit -m "<quick statement describing incremental change>"`. 
+9. ***YC***: Type `git status` to understand what is committed, not committed, and not tracked.
+10. ***YC***: Type `git push <your_fork_remote_name> <branch-descriptive-name-of-your-change>`. In this workflow `<your_fork_remote_name>` is likely `origin`.
+*If you have extensive changes, then it is a good practice to *add*, *commit*, and *push* regularly so you don't loose work.*
+
+***Ready to start merge your new code with the central repo***
+1. ***GG***: Click ***Pull requests*** and select ***New pull requests***. You will see a GUI to decribe what which repo/branch that you want to move your specific repo/branch into:   
+*BASE-Remote(Fork), Branch <<-- HEAD-Remote(Fork), Branch*.  For most cases you only need to change the branch on each side to match `<branch-descriptive-name-of-your-change>`.
+2. ***GG***: Click ***Submit*** and select reviewers. You may have instructions on this already or confer with the team to decide a policy. 
+3. ***GG***: Click ***Issues***, open "your" issue and a comment referencing your new *PR*.
+4. ***GG***: Interact with reviewers and other interested parties on github as much as possible in the *PR*.
 5. ***YC***: If you have new changes in response to the *PR* review before it is *merged*, then you can continue to *add*, *commit*, and *push* on your `<branch-descriptive-name-of-your-change>`. The associated *PR* will update automatically.
-6. ***GG***: Sometimes *merging* permission is granted to everyone, but check with others before *merging* your *PR* to avoid confusion. Once the *PR* is *merged*, update and potentially close the associated *issue(s)*. 
-
-`git add` and `git commit` as necessary until you are finished with your changes/additions
-
-***Submitting your changes***
-*Some central repos have requirements like tests and codestyle (PEP8).  These can be automated.*
-1. ***YC***: After all tests and check, 
-
-
-
-
-
+6. ***GG***: If you have *Merge* privileges, confer with team on self-merge policy.
 
 
 
