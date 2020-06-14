@@ -87,7 +87,7 @@ BLAH BLAH BLAH
 | 2. | ***YC*** | Type `git fetch <remote_name_central_repo>`. |
 | 3. | ***YC*** | Type `git checkout master` to switch to your fork's local master branch.|
 | 4. | ***YC*** | Type `git merge <remote_name_central_repo>/master` to update your fork's local master branch. |
-| 5. | ***YC*** | Type `push <remote_name_fork_of_central> master` to update the github version with the local version of your master branch.  Now the github master branches of the central repo and your fork are identical. |
+| 5. | ***YC*** | Type `git push <remote_name_fork_of_central> master` to update the github version with the local version of your master branch.  Now the github master branches of the central repo and your fork are identical. |
 
 From here, further development is easiest if you create new central branches instead of using older ones.  `git branch -d <feature_branch>` can be used to clean up your local feature branches.  
 
