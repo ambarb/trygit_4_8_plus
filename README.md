@@ -87,3 +87,5 @@ For most cases you only need to change the branch on each side to match `<branch
 - [See ***Contributing*** and ***Developer Materials*** for detailed practices used by a community repo (scikit-beam)](https://scikit-beam.github.io/scikit-beam/ )
 - [more git tutorials and examples](http://try.github.io/)
 - [scikit-beam's cited resource for common git problems](http://sethrobertson.github.io/GitFixUm/fixup.html)
+- [configure upstream repo (central branch master)](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/configuring-a-remote-for-a-fork)
+- [update (sync) your fork master from central branch master](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
