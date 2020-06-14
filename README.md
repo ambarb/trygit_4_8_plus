@@ -35,7 +35,7 @@ Now your computer is setup to track your remote fork (default name `origin`) and
 - It is best to never *commit* work on the master branch. The central repo and its forks can have different "copies" called branches. 
 - Git commands to check things before committing: `git status`, `git remote -v`, `git branch`
 - Use `git commit` and `git push` regulary to track incremental changes and not loose work. 
-- If you get stuck or confused,then use [scikit-beam's citee resource for common git problems](http://sethrobertson.github.io/GitFixUm/fixup.html)
+- If you get stuck or confused,then use [scikit-beam's cited resource for common git problems](http://sethrobertson.github.io/GitFixUm/fixup.html).
 
 ***Starting local contributions and submitting them***
 1. ***GG***: Use ***Issues*** link to identify potential problems to help solve or start an *issue* on something you would like to contribute
@@ -50,9 +50,13 @@ Now your computer is setup to track your remote fork (default name `origin`) and
 10. ***YC***: Type `git push <your_fork_remote_name> <branch-descriptive-name-of-your-change>`. In this workflow `<your_fork_remote_name>` is likely `origin`.
 *If you have extensive changes, then it is a good practice to *add*, *commit*, and *push* regularly so you don't loose work.*
 
-***Ready to start merge your new code with the central repo***
+***Ready to merge your new code with the central repo***
 1. ***GG***: Click ***Pull requests*** and select ***New pull requests***. You will see a GUI to decribe what which repo/branch that you want to move your specific repo/branch into:   
-*BASE-Remote(Fork), Branch <<-- HEAD-Remote(Fork), Branch*.  For most cases you only need to change the branch on each side to match `<branch-descriptive-name-of-your-change>`.
+
+|------|------|------|
+|BASE-Remote(Fork), Branch | <<-- | HEAD-Remote(Fork), Branch | 
+
+For most cases you only need to change the branch on each side to match `<branch-descriptive-name-of-your-change>`.
 2. ***GG***: Click ***Submit*** and select reviewers. You may have instructions on this already or confer with the team to decide a policy. 
 3. ***GG***: Click ***Issues***, open "your" issue and a comment referencing your new *PR*.
 4. ***GG***: Interact with reviewers and other interested parties on github as much as possible in the *PR*.
@@ -65,6 +69,8 @@ Now your computer is setup to track your remote fork (default name `origin`) and
 ### Reference Materials: 
 *For your implmentation of this template or in your future projects.*
 - [solar system](https://solarsystem.nasa.gov/planets/in-depth/#the_new_definition_of_planet_otp)
-- [markdown](https://www.markdownguide.org/cheat-sheet/)
-- [See ***Contributing*** and ***Developer Materials*** for detailed practices used by a community repo](https://scikit-beam.github.io/scikit-beam/ )
-- [more git](http://try.github.io/)
+- [markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/)
+- [git cheat sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf)
+- [See ***Contributing*** and ***Developer Materials*** for detailed practices used by a community repo (scikit-beam)](https://scikit-beam.github.io/scikit-beam/ )
+- [more git tutorials and examples](http://try.github.io/)
+- [scikit-beam's cited resource for common git problems](http://sethrobertson.github.io/GitFixUm/fixup.html)
