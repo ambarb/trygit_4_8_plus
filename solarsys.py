@@ -1,4 +1,4 @@
-from solarsys.celestialbody import earth, jupiter, mars, mercury, neptune, saturn, uranus, venus
+from celestialbody import earth, jupiter, mars, mercury, neptune, saturn, uranus, venus
 import collections
 
 def make(planet): 
