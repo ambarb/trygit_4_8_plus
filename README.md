@@ -8,7 +8,7 @@ A simple mock up of a modular, nested python package for group collaboration wit
 * These participant instructions are designed as if you rename the repo `solarsys`
  
 # solarsys
-A simple mock up of a modular, nested python package for group collaboration. The project is a sandbox to gain experience with collaborative coding projects and provides opportunites to develop and practice more advanced skills.  
+A simple mock up of a modular, nested python package for group collaboration. The project is a sandbox for gaining experience with collaborative coding projects and provides opportunites to develop and practice more advanced skills.  
  
 ## Instructions for using solarsys to learn more about git
 *See the bottom of this document to find some common **Reference Materials**.* 
