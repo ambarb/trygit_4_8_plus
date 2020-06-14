@@ -5,10 +5,9 @@ A simple mock up of a modular, nested python package for group collaboration wit
 * `solarsys` is meant to represent a standalone ***repo***sitory
 * it is incomplete and imperfect by design but provides a "sandbox" to practice software development
 * use `trygit-4-8-plus` as a template to create your custom repo for a customized team experience
-* These participant instructions are designed as if you rename the repo `solarsys`
-* 
+* These participant instructions are designed as if you rename this repo `solarsys` but `<central_repo>` has been used in its place for easier customization.
  
-# solarsys
+# `<central_repo>`
 A simple mock up of a modular, nested python package for group collaboration. The project is a sandbox for gaining experience with collaborative coding projects and provides opportunites to develop and practice more advanced skills.  
  
 ## Instructions for using solarsys to learn more about git
@@ -32,10 +31,10 @@ A simple mock up of a modular, nested python package for group collaboration. Th
 | 3. | ***YC*** | Open terminal window and navigate to where you want to save this repo |
 | 4. | ***YC*** | Type `git clone <paste_copied_url>`. `<paste_copied_url>` is something like `https://github.com/<your_git_uid>/<repo_name>.git`. |
 | 5. | ***YC*** | Type `cd <repo_name>`.  |
-| 6. | ***YC*** | Type `git remote add <remote_name_central_repo> git://github.com/<team_name>/<central_repo_name>.git`.  You can copy the link from *GG* like in set 2. |
+| 6. | ***YC*** | Type `git remote add <repo_name> git://github.com/<team_name>/<repo_name>.git`.  You can copy the link from *GG* like in set 2. |
 | 7. | ***YC*** | Type `git remote -v`. |
 
-Now your computer is setup to track your remote fork (default name `origin`) and the remote central repo (`<repo_name>`). You can locally change the names if more convenient for you.  But this tutorial assumes you have not done this.
+Now your computer is setup to track your remote fork (default name `origin` or generically here `<your_fork_remote_name>`) and the remote central repo (`<repo_name>`). You can change the names representing the remotes if more convenient for you.  But this tutorial assumes you have not done this.
 
 ***Test the library by starting a python session and importing the library.*** No python packaging has been performed. To test as is on your computer, start your python session, navigate to the repo directory and `import solarsy`.
 
@@ -43,42 +42,41 @@ Now your computer is setup to track your remote fork (default name `origin`) and
 - Do not locally *commit* and *push* changes to the central repo. Use your fork for this purpose.
 - It is best to never *commit* work on the master branch. The central repo and its forks can have different "copies" called branches. 
 - Git commands to check things before committing: `git status`, `git remote -v`, `git branch`
-- Use `git commit` and `git push` regulary to track incremental changes and not loose work. 
-- If you get stuck or confused,then use [scikit-beam's cited resource for common git problems](http://sethrobertson.github.io/GitFixUm/fixup.html).
+- Use `git commit` and `git push` regulary to track incremental changes and not loose work on your "feature" branch.
+- If you get stuck or confused, see links at bottom that provide more details.
 
-***Starting local contributions and submitting them***
+***Starting local contributions and submitting them using a feature branch***
 | Step No. | Where | Instruction |
 | -- | ----- | ----------- |
 | 1. | ***GG*** | Use ***Issues*** link to identify potential problems to help solve or start an *issue* on something you would like to contribute.|
-| 2. | ***GG*** | If an issue is not assigned to you, then pick/create an issue and self assign. |
-| 3. | ***YC*** | We skip making sure both remote master branches are up to date locally. We will practice this later. |
-| 4. | ***YC*** | Type`git branch <descriptive_name-of-your-change>` to create a new branch. Type `git branch`. Where is `*`?|
-| 5. | ***YC*** | Type `git checkout <branch-descriptive-name-of-your-change>` to switch to the new branch. Type `git branch`. See change in `*`.|
+| 2. | ***GG*** | If an issue is not assigned to you, then pick/create an issue and self assign using the web interface. |
+| 3. | ***YC*** | Here, we skip making sure both remote master branches are up to date locally. We will practice this later. |
+| 4. | ***YC*** | Type`git branch <descriptive-name-of-your-change>` to create a new branch. Type `git branch`. Where is `*`?|
+| 5. | ***YC*** | Type `git checkout <descriptive-name-of-your-change>` to switch to the new feature branch. Type `git branch`. See change in `*`.|
 | 6. | ***YC*** | Start making changes and testing them as you go. |
 | 7. | ***YC*** | Type `git add <filename.py>` to organize the files you have changed/created and would like to *commit*. |
-| 8. | ***YC*** | Type `git commit -m "<quick statement describing incremental change>"` to commit to your "feature branch" |
-| 9. | ***YC*** | Type `git status` to understand what is committed, not committed, and not tracked. Note your current branch from output.|
-| 10. | ***YC*** | Type `git push <your_fork_remote_name> <branch-descriptive-name-of-your-change>`. In this workflow `<your_fork_remote_name>` is likely `origin`. |
+| 8. | ***YC*** | Type `git status` to understand what is committed, not committed, and not tracked. Note your current branch from output.|
+| 9. | ***YC*** | Type `git commit -m "<quick statement describing incremental change>"` to commit to your "feature branch" |
+| 10. | ***YC*** | Type `git status` to understand what is committed, not committed, and not tracked. Note your current branch from output.|
+| 11. | ***YC*** | Type `git push <your_fork_remote_name> <branch-descriptive-name-of-your-change>`. In this workflow `<your_fork_remote_name>` is likely `origin`. |
 
 *If you have extensive changes, then it is a good practice to *add*, *commit*, and *push* regularly so you don't loose work.*
 
 ***Ready to merge your new code with the central repo on github.com***
 | Step No. | Where | Instruction |
 | -- | ----- | ----------- |
-| 1. | ***YG*** | There are multiple ways.  The easiest to explain: Click ***Pull requests*** and select ***New pull requests***.  You will see a GUI to decribe what which repo/branch that you want to move your specific repo/branch into. With the right most dropdown, select your pushed "feature branch".|   
+| 1. | ***YG*** | There are multiple ways.  The easiest to explain is click ***Pull requests*** and select ***New pull requests***.  You will see a GUI to decribe which repo/branch that you want to move your forked repo/branch into. With the right most dropdown, select your pushed "feature branch".|   
 |    |          | ***BASE*** Remote(Fork), Branch <<-- ***HEAD*** Remote(Fork), Branch|
-|    |*probably*| <central_solarsys> master <<-- <forked_solarsys> <ranch-descriptive-name-of-your-change>|
+|    |*probably*| <repo_name> master <<-- <forked_solarsys> <ranch-descriptive-name-of-your-change>|
 | 2. | ***YG*** | Click ***Submit***.  |
 | 3. | ***GG*** | You will be routed to ***Pull requests*** of the central repo. Select reviewers. You may have instructions on this already or confer with the team to decide a policy.  |
 | 4. | ***GG*** | Click ***Issues***, open "your" issue and a comment referencing your new *PR*. |
 | 5. | ***GG*** | Interact with reviewers and other interested parties on github as much as possible in the *PR*. |
 | 6. | ***YC*** | If you have new changes in response to the *PR* review before it is *merged*, then you can continue to *add*, *commit*, and *push* on your `<branch-descriptive-name-of-your-change>`. The associated *PR* will update automatically.|
-| 7. | ***GG*** | If you have *Merge* privileges, confer with team on self-merge policy. |
+| 7. | ***GG*** | If you have ***Merge*** privileges, then confer with team on its self-merge policy. |
 
-For most cases you only need to change the branch on each side to match `<branch-descriptive-name-of-your-change>`.
-
-***Practice code reviews on central***
-BLAH BLAH BLAH
+***Practice code reviews on central repo***
+For private repos, there may be not notifciation on a request to review.  In this case, navigate to the central repo's github page and select ***Pull requests***.  You may see your avatar on the right.  Additionally, you can hover over each PR link to see if you have been assigned something.  Click on those links and the next steps will most likely be highlighted.
 
 ***Updating local repos to match most current version of the central repo as seen on github.com***
 | Step No. | Where | Instruction |
@@ -91,7 +89,20 @@ BLAH BLAH BLAH
 
 From here, further development is easiest if you create new central branches instead of using older ones.  `git branch -d <feature_branch>` can be used to clean up your local feature branches.  
 
-***More advanced development*** The instrucitons outlined above can serves as first time use instructions and as a reference for the future. In addition, solarsys can be developed to add more complexity to the code with a richer desciprtion of our solar system. Finally, the solarsys project has room for more advanced practice of software carpentry tools: setup.py, version tagging, unit tests, code style requirements, json templating, and more.  
+***Updating an in progress feature branch with central repo as seen on github.com***
+*This can get complicated, especially if changing the same file. In practice, if the changes you are making don't touch what has been updated, this is not needed.  You will loose uncomitted changes.  This is not recommended by professionals and you should `rebase` instead.*
+| Step No. | Where | Instruction |
+| -- | ----- | ----------- |
+| 1. | ***YC*** | Complete the steps above to make sure both remote master branches match (central repo and fork of central repo). |
+| 2. | ***YC*** | Use `git checkout <feature_branch_name>` and make you have committed all of your changes that you want to retain. |
+| 3. | ***YC*** | Type `git push <remote_name_fork_of_central> master` and edit the merge request (vi editor). Upon closing and saving of this file, the feature branch will be updated. |
+
+***More advanced development*** The instrucitons outlined above can serves as first time use instructions and as a reference for the future. In addition, solarsys can be developed to add more complexity to the code with a richer desciprtion of our solar system. Finally, the solarsys project has room for more advanced practice of software carpentry tools: python packaing, version tagging, unit tests, code style requirements, json templating, and more.  
+
+## Highlights
+1. Typically there is never a need to pull from your fork's remote master
+2. Never push to the central repo's remote master. Use ***Pull requests*** after pushing your feature branch.
+3. If you are instrcuted by git to `rebase`, decline if possible and research futher.  See `scikit-beam`s recommendations as a starting point for discussion.  Use `rebase` instead of pulling from the central repo's master branch to your fork's feature branch.
 
 ### Reference Materials: 
 *For your implmentation of this template or in your future projects.*
