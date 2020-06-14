@@ -56,7 +56,7 @@ Now your computer is setup to track your remote fork (default name `origin`) and
 | 5. | ***YC*** | Type `git checkout <branch-descriptive-name-of-your-change>` to switch to the new branch. Type `git branch`. See change in `*`.|
 | 6. | ***YC*** | Start making changes and testing them as you go. |
 | 7. | ***YC*** | Type `git add <filename.py>` to organize the files you have changed/created and would like to *commit*. |
-| 8. | ***YC*** | Type `git commit -m "<quick statement describing incremental change>"`.  |
+| 8. | ***YC*** | Type `git commit -m "<quick statement describing incremental change>"` to commit to your "feature branch" |
 | 9. | ***YC*** | Type `git status` to understand what is committed, not committed, and not tracked. Note your current branch from output.|
 | 10. | ***YC*** | Type `git push <your_fork_remote_name> <branch-descriptive-name-of-your-change>`. In this workflow `<your_fork_remote_name>` is likely `origin`. |
 
@@ -65,9 +65,9 @@ Now your computer is setup to track your remote fork (default name `origin`) and
 ***Ready to merge your new code with the central repo***
 | Step No. | Where | Instruction |
 | -- | ----- | ----------- |
-| 1. | ***GG*** | Click ***Pull requests*** and select ***New pull requests***. You will see a GUI to decribe what which repo/branch that you want to move your specific repo/branch into:|   
+| 1. | ***YG*** | There are multiple ways.  The easiest to explain: Click ***Pull requests*** and select ***New pull requests***. Select the pushed "feature branch" on the rightmost dropdown.  You will see a GUI to decribe what which repo/branch that you want to move your specific repo/branch into:|   
 |    |          | ***BASE*** Remote(Fork), Branch <<-- ***HEAD*** Remote(Fork), Branch|
-|    |*probably*| solarsys <new_branch_name> <<-- fork of solarsys <new_branch>|
+|    |*probably*| <central_solarsys> master <<-- <forked_solarsys> <ranch-descriptive-name-of-your-change>|
 | 2. | ***GG*** | Click ***Submit*** and select reviewers. You may have instructions on this already or confer with the team to decide a policy.  |
 | 3. | ***GG*** | Click ***Issues***, open "your" issue and a comment referencing your new *PR*. |
 | 4. | ***GG*** | Interact with reviewers and other interested parties on github as much as possible in the *PR*. |
