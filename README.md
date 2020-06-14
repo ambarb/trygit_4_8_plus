@@ -3,10 +3,14 @@ A simple mock up of a modular, nested python package for group collaboration wit
 
 ## How to Use trygit-4-8-plus 
 * `solarsys` is meant to represent a standalone ***repo***sitory
-* it is incomplete and imperfect by design
-* use `trygit-4-8-plus` as a template to create your custom repo to customize the experience
-  
-## Instructions for Custom Repo
+* it is incomplete and imperfect by design but provides a "sandbox" to practice software development
+* use `trygit-4-8-plus` as a template to create your custom repo for a customized team experience
+* These participant instructions are designed as if you rename the repo `solarsys`
+ 
+# solarsys
+A simple mock up of a modular, nested python package for group collaboration. The project is a sandbox to gain experience with collaborative coding projects and provides opportunites to develop and practice more advanced skills.  
+ 
+## Instructions for using solarsys to learn more about git
 *See the bottom of this document to find some common **Reference Materials**.* 
 ### Requirements
 - Each particpate has a github account
@@ -70,6 +74,7 @@ Now your computer is setup to track your remote fork (default name `origin`) and
 
 For most cases you only need to change the branch on each side to match `<branch-descriptive-name-of-your-change>`.
 
+***More advanced development*** The instrucitons outlined above can serves as first time use instructions and as a reference for the future. In addition, solarsys can be developed to add more complexity to the code with a richer desciprtion of our solar system. Finally, the solarsys project has room for more advanced practice of software carpentry tools: setup.py, version tagging, unit tests, code style requirements, json templating, and more.  
 
 ### Reference Materials: 
 *For your implmentation of this template or in your future projects.*
