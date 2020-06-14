@@ -37,7 +37,7 @@ A simple mock up of a modular, nested python package for group collaboration. Th
 
 Now your computer is setup to track your remote fork (default name `origin`) and the remote central repo (`<repo_name>`). You can locally change the names if more convenient for you.  But this tutorial assumes you have not done this.
 
-***Test the library by starting a python session and importing the library.*** If using a conda env or something simliar, you can `cd <repo_name>` and `pip install xxxx -e .` If all else fails, start your python session, navigate to the repo directory and `import solarsy`.
+***Test the library by starting a python session and importing the library.*** No python packaging has been performed. To test as is on your computer, start your python session, navigate to the repo directory and `import solarsy`.
 
 ***Things to know before you start changing files***
 - Do not locally *commit* and *push* changes to the central repo. Use your fork for this purpose.
@@ -51,7 +51,7 @@ Now your computer is setup to track your remote fork (default name `origin`) and
 | -- | ----- | ----------- |
 | 1. | ***GG*** | Use ***Issues*** link to identify potential problems to help solve or start an *issue* on something you would like to contribute.|
 | 2. | ***GG*** | If an issue is not assigned to you, then pick/create an issue and self assign. |
-| 3. | ***YC*** | Type `git pull origin master`. |
+| 3. | ***YC*** | Type `git pull origin master`. This is best practice because you never know if the repo has changed. To just check if there are update: `git pull fetch orgin master` and `git status` |
 | 4. | ***YC*** | Type`git branch <descriptive_name-of-your-change>` to create a new branch. Type `git branch`. Where is `*`?|
 | 5. | ***YC*** | Type `git checkout <branch-descriptive-name-of-your-change>` to switch to the new branch. Type `git branch`.|
 | 6. | ***YC*** | Start making changes and testing them as you go. |
