@@ -58,7 +58,7 @@ Now your computer is setup to track your remote fork (default name `origin` or g
 | 8. | ***YC*** | Type `git status` to understand what is committed, not committed, and not tracked. Note your current branch from output.|
 | 9. | ***YC*** | Type `git commit -m "<quick statement describing incremental change>"` to commit to your "feature branch" |
 | 10. | ***YC*** | Type `git status` to understand what is committed, not committed, and not tracked. Note your current branch from output.|
-| 11. | ***YC*** | Type `git push <your_fork_remote_name> <branch-descriptive-name-of-your-change>`. In this workflow `<your_fork_remote_name>` is likely `origin`. |
+| 11. | ***YC*** | Type `git push <your_fork_remote_name> <descriptive-name-of-your-change>`. In this workflow `<your_fork_remote_name>` is likely `origin`. |
 
 *If you have extensive changes, then it is a good practice to *add*, *commit*, and *push* regularly so you don't loose work.*
 
@@ -66,8 +66,8 @@ Now your computer is setup to track your remote fork (default name `origin` or g
 | Step No. | Where | Instruction |
 | -- | ----- | ----------- |
 | 1. | ***YG*** | There are multiple ways.  The easiest to explain is click ***Pull requests*** and select ***New pull requests***.  You will see a GUI to decribe which repo/branch that you want to move your forked repo/branch into. With the right most dropdown, select your pushed "feature branch".|   
-|    |          | ***BASE*** Remote(Fork), Branch <<-- ***HEAD*** Remote(Fork), Branch|
-|    |*probably*| <repo_name> master <<-- <forked_solarsys> <ranch-descriptive-name-of-your-change>|
+|    |          | ***BASE*** Remote(Fork), Branch  <<--  ***HEAD*** Remote(Fork), Branch|
+|    |*probably*| `<repo_name> master` <<-- `<forked_solarsys> <descriptive-name-of-your-change>`|
 | 2. | ***YG*** | Click ***Submit***.  |
 | 3. | ***GG*** | You will be routed to ***Pull requests*** of the central repo. Select reviewers. You may have instructions on this already or confer with the team to decide a policy.  |
 | 4. | ***GG*** | Click ***Issues***, open "your" issue and a comment referencing your new *PR*. |
@@ -89,8 +89,8 @@ For private repos, there may be not notifciation on a request to review.  In thi
 
 From here, further development is easiest if you create new central branches instead of using older ones.  `git branch -d <feature_branch>` can be used to clean up your local feature branches.  
 
-***Updating an in progress feature branch with central repo as seen on github.com***
-*This can get complicated, especially if changing the same file. In practice, if the changes you are making don't touch what has been updated, this is not needed.  You will loose uncomitted changes.  This is not recommended by professionals and you should `rebase` instead.*
+***Updating an in progress feature branch with the central repo as seen on github.com***
+*This is usually not required and the method here is probably not recommended by professionals. This task can get complicated, especially if changing the same file (and more so the same lines). If you proceed with this method, then you will loose uncomitted changes.  Professionals will `rebase` instead.  The good news is that this repo is designed to make a mess and learn how git works!*
 | Step No. | Where | Instruction |
 | -- | ----- | ----------- |
 | 1. | ***YC*** | Complete the steps above to make sure both remote master branches match (central repo and fork of central repo). |
@@ -100,18 +100,18 @@ From here, further development is easiest if you create new central branches ins
 ***More advanced development*** The instrucitons outlined above can serves as first time use instructions and as a reference for the future. In addition, solarsys can be developed to add more complexity to the code with a richer desciprtion of our solar system. Finally, the solarsys project has room for more advanced practice of software carpentry tools: python packaing, version tagging, unit tests, code style requirements, json templating, and more.  
 
 ## Highlights
-1. Typically there is never a need to pull from your fork's remote master
-2. Never push to the central repo's remote master. Use ***Pull requests*** after pushing your feature branch.
-3. If you are instrcuted by git to `rebase`, decline if possible and research futher.  See `scikit-beam`s recommendations as a starting point for discussion.  Use `rebase` instead of pulling from the central repo's master branch to your fork's feature branch.
+1. Typically there is never a need to pull from your fork's remote master.
+2. Never push to the central repo's remote master. Use ***Pull requests*** after pushing your fork's feature branch to its remote.
+3. If you are instrcuted by git to `rebase`, decline if possible and research futher.  See `scikit-beam`s recommendations as a starting point for its discussion.  Use `rebase` instead of pulling from the central repo's master branch to your fork's feature branch.
 
 ### Reference Materials: 
-*For your implmentation of this template or in your future projects.*
+*For your implementation of this template or in your future projects.*
 - [solar system](https://solarsystem.nasa.gov/planets/in-depth/#the_new_definition_of_planet_otp)
 - [markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/)
 - [git cheat sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf)
 - [See ***Contributing*** and ***Developer Materials*** for detailed practices used by a community repo (scikit-beam)](https://scikit-beam.github.io/scikit-beam/ )
-- [more git tutorials and examples](http://try.github.io/)
 - [scikit-beam's cited resource for common git problems](http://sethrobertson.github.io/GitFixUm/fixup.html)
+- [more git tutorials and examples](http://try.github.io/)
 - [configure upstream repo remote (central branch master)](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/configuring-a-remote-for-a-fork)
-- [update (sync) your local fork master from central branch master](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
-- [match your updated local fork to your remote fork](https://help.github.com/en/github/using-git/pushing-commits-to-a-remote-repository)
+- [update (sync) your local fork master from remote central branch master](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
+- [update (sync) your remote fork to your synced local fork](https://help.github.com/en/github/using-git/pushing-commits-to-a-remote-repository)
