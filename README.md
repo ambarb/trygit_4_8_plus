@@ -32,7 +32,7 @@ A simple mock up of a modular, nested python package for group collaboration. Th
 | 3. | ***YC*** | Open terminal window and navigate to where you want to save this repo |
 | 4. | ***YC*** | Type `git clone <paste_copied_url>`. `<paste_copied_url>` is something like `https://github.com/<your_git_uid>/<repo_name>.git`. |
 | 5. | ***YC*** | Type `cd <repo_name>`.  |
-| 6. | ***YC*** | Type `git remote add solarsys git://github.com/<team_name>/<repo_name>.git`.  You can copy the link from *GG* like in set 2. |
+| 6. | ***YC*** | Type `git remote add <remote_name_central_repo> git://github.com/<team_name>/<central_repo_name>.git`.  You can copy the link from *GG* like in set 2. |
 | 7. | ***YC*** | Type `git remote -v`. |
 
 Now your computer is setup to track your remote fork (default name `origin`) and the remote central repo (`<repo_name>`). You can locally change the names if more convenient for you.  But this tutorial assumes you have not done this.
@@ -51,7 +51,7 @@ Now your computer is setup to track your remote fork (default name `origin`) and
 | -- | ----- | ----------- |
 | 1. | ***GG*** | Use ***Issues*** link to identify potential problems to help solve or start an *issue* on something you would like to contribute.|
 | 2. | ***GG*** | If an issue is not assigned to you, then pick/create an issue and self assign. |
-| 3. | ***YC*** | Type `git pull origin master`. This is best practice because you never know if the repo has changed. To just check if there are update: `git pull fetch orgin master` and `git status` |
+| 3. | ***YC*** | We skip making sure both remote master branches are up to date locally. We will practice this later. |
 | 4. | ***YC*** | Type`git branch <descriptive_name-of-your-change>` to create a new branch. Type `git branch`. Where is `*`?|
 | 5. | ***YC*** | Type `git checkout <branch-descriptive-name-of-your-change>` to switch to the new branch. Type `git branch`. See change in `*`.|
 | 6. | ***YC*** | Start making changes and testing them as you go. |
@@ -77,6 +77,20 @@ Now your computer is setup to track your remote fork (default name `origin`) and
 
 For most cases you only need to change the branch on each side to match `<branch-descriptive-name-of-your-change>`.
 
+***Practice code reviews on central***
+BLAH BLAH BLAH
+
+***Updating local repos to match most current version of the central repo***
+| Step No. | Where | Instruction |
+| -- | ----- | ----------- |
+| 1. | ***YC*** | Type `git remote -v` to remind yourself of the remote names of the central repo and your fork of it. |
+| 2. | ***YC*** | Type `git fetch <remote_name_central_repo>`. |
+| 3. | ***YC*** | Type `git checkout master` to switch to your fork's local master branch.|
+| 4. | ***YC*** | Type `git merge <remote_name_central_repo>/master` to update your fork's local master branch. |
+| 5. | ***YC*** | Type `push <remote_name_fork_of_central> master` to update the github version with the local version of your master branch.  Now the github master branches of the central repo and your fork are identical. |
+
+From here, further development is easiest if you create new central branches instead of using older ones.  `git branch -d <feature_branch>` can be used to clean up your local feature branches.  
+
 ***More advanced development*** The instrucitons outlined above can serves as first time use instructions and as a reference for the future. In addition, solarsys can be developed to add more complexity to the code with a richer desciprtion of our solar system. Finally, the solarsys project has room for more advanced practice of software carpentry tools: setup.py, version tagging, unit tests, code style requirements, json templating, and more.  
 
 ### Reference Materials: 
@@ -88,4 +102,5 @@ For most cases you only need to change the branch on each side to match `<branch
 - [more git tutorials and examples](http://try.github.io/)
 - [scikit-beam's cited resource for common git problems](http://sethrobertson.github.io/GitFixUm/fixup.html)
 - [configure upstream repo remote (central branch master)](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/configuring-a-remote-for-a-fork)
-- [update (sync) your fork master from central branch master](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
+- [update (sync) your local fork master from central branch master](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
+- [match your updated local fork to your remote fork](https://help.github.com/en/github/using-git/pushing-commits-to-a-remote-repository)
