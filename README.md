@@ -6,6 +6,7 @@ A simple mock up of a modular, nested python package for group collaboration wit
 * it is incomplete and imperfect by design but provides a "sandbox" to practice software development
 * use `trygit-4-8-plus` as a template to create your custom repo for a customized team experience
 * These participant instructions are designed as if you rename the repo `solarsys`
+* 
  
 # solarsys
 A simple mock up of a modular, nested python package for group collaboration. The project is a sandbox for gaining experience with collaborative coding projects and provides opportunites to develop and practice more advanced skills.  
@@ -30,10 +31,11 @@ A simple mock up of a modular, nested python package for group collaboration. Th
 | 2. | ***YG*** | Click ***Clone or Download*** and copy the the URL in the pop-up window |
 | 3. | ***YC*** | Open terminal window and navigate to where you want to save this repo |
 | 4. | ***YC*** | Type `git clone <paste_copied_url>`. `<paste_copied_url>` is something like `https://github.com/<your_git_uid>/<repo_name>.git`. |
-| 5. | ***YC*** | Type `cd solarsys`.  |
-| 6. | ***YC*** | Type `git remote add solarsys git://github.com/<team_name>/solarsys.git`.  You can copy the link from *GG* like in set 2. |
+| 5. | ***YC*** | Type `cd <repo_name>`.  |
+| 6. | ***YC*** | Type `git remote add solarsys git://github.com/<team_name>/<repo_name>.git`.  You can copy the link from *GG* like in set 2. |
+| 7. | ***YC*** | Type `git remote -v`. |
 
-Now your computer is setup to track your remote fork (default name `origin`) and the remote central repo (`<repo_name>`). You can locally change the names if more convenient for you.  
+Now your computer is setup to track your remote fork (default name `origin`) and the remote central repo (`<repo_name>`). You can locally change the names if more convenient for you.  But this tutorial assumes you have not done this.
 
 ***Test the library by starting a python session and importing the library.*** If using a conda env or something simliar, you can `cd <repo_name>` and `pip install xxxx -e .` If all else fails, start your python session, navigate to the repo directory and `import solarsy`.
 
