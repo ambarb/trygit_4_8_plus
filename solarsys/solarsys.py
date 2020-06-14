@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 from solarsys.celestialbody import earth, jupiter, mars, mercury, neptune, saturn, uranus, venus
-=======
-from solarsys.celbody_planets import earth, jupiter, mars, mercury, neptune, saturn, uranus, venus
->>>>>>> master
 import collections
 
 def make(planet): 
@@ -110,9 +106,4 @@ def get_all_sorted(sort='alphabetical', cb_type='planet'):
 
     
     
-    
-<<<<<<< HEAD
-    
-=======
-    
->>>>>>> master
+   
