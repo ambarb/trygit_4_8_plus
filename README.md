@@ -65,14 +65,15 @@ Now your computer is setup to track your remote fork (default name `origin`) and
 ***Ready to merge your new code with the central repo***
 | Step No. | Where | Instruction |
 | -- | ----- | ----------- |
-| 1. | ***YG*** | There are multiple ways.  The easiest to explain: Click ***Pull requests*** and select ***New pull requests***. Select the pushed "feature branch" on the rightmost dropdown.  You will see a GUI to decribe what which repo/branch that you want to move your specific repo/branch into:|   
+| 1. | ***YG*** | There are multiple ways.  The easiest to explain: Click ***Pull requests*** and select ***New pull requests***.  You will see a GUI to decribe what which repo/branch that you want to move your specific repo/branch into. With the right most dropdown, select your pushed "feature branch".|   
 |    |          | ***BASE*** Remote(Fork), Branch <<-- ***HEAD*** Remote(Fork), Branch|
 |    |*probably*| <central_solarsys> master <<-- <forked_solarsys> <ranch-descriptive-name-of-your-change>|
-| 2. | ***GG*** | Click ***Submit*** and select reviewers. You may have instructions on this already or confer with the team to decide a policy.  |
-| 3. | ***GG*** | Click ***Issues***, open "your" issue and a comment referencing your new *PR*. |
-| 4. | ***GG*** | Interact with reviewers and other interested parties on github as much as possible in the *PR*. |
-| 5. | ***YC*** | If you have new changes in response to the *PR* review before it is *merged*, then you can continue to *add*, *commit*, and *push* on your `<branch-descriptive-name-of-your-change>`. The associated *PR* will update automatically.|
-| 6. | ***GG*** | If you have *Merge* privileges, confer with team on self-merge policy. |
+| 2. | ***YG*** | Click ***Submit***.  |
+| 3. | ***GG*** | You will be routed to ***Pull requests*** of the central repo. Select reviewers. You may have instructions on this already or confer with the team to decide a policy.  |
+| 4. | ***GG*** | Click ***Issues***, open "your" issue and a comment referencing your new *PR*. |
+| 5. | ***GG*** | Interact with reviewers and other interested parties on github as much as possible in the *PR*. |
+| 6. | ***YC*** | If you have new changes in response to the *PR* review before it is *merged*, then you can continue to *add*, *commit*, and *push* on your `<branch-descriptive-name-of-your-change>`. The associated *PR* will update automatically.|
+| 7. | ***GG*** | If you have *Merge* privileges, confer with team on self-merge policy. |
 
 For most cases you only need to change the branch on each side to match `<branch-descriptive-name-of-your-change>`.
 
