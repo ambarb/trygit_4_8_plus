@@ -60,15 +60,14 @@ Now your computer is setup to track your remote fork (default name `origin`) and
 | Step No. | Where | Instruction |
 | -- | ----- | ----------- |
 | 1. | ***GG*** | Click ***Pull requests*** and select ***New pull requests***. You will see a GUI to decribe what which repo/branch that you want to move your specific repo/branch into:|   
+|    |          | ***BASE*** Remote(Fork), Branch <<-- ***HEAD*** Remote(Fork), Branch|
+|    |*probably*| solarsys <new_branch> <<-- fork of solarsys <new_branch>|
 | 2. | ***GG*** | Click ***Submit*** and select reviewers. You may have instructions on this already or confer with the team to decide a policy.  |
 | 3. | ***GG*** | Click ***Issues***, open "your" issue and a comment referencing your new *PR*. |
 | 4. | ***GG*** | Interact with reviewers and other interested parties on github as much as possible in the *PR*. |
 | 5. | ***YC*** | If you have new changes in response to the *PR* review before it is *merged*, then you can continue to *add*, *commit*, and *push* on your `<branch-descriptive-name-of-your-change>`. The associated *PR* will update automatically.|
 | 6. | ***GG*** | If you have *Merge* privileges, confer with team on self-merge policy. |
 
-
-| | | ***BASE*** Remote(Fork), Branch <<-- ***HEAD*** Remote(Fork), Branch|
-| *probably* | solarsys <new_branch> <<-- fork of solarsys <new_branch>|
 For most cases you only need to change the branch on each side to match `<branch-descriptive-name-of-your-change>`.
 
 
