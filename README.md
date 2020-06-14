@@ -53,11 +53,11 @@ Now your computer is setup to track your remote fork (default name `origin`) and
 | 2. | ***GG*** | If an issue is not assigned to you, then pick/create an issue and self assign. |
 | 3. | ***YC*** | Type `git pull origin master`. This is best practice because you never know if the repo has changed. To just check if there are update: `git pull fetch orgin master` and `git status` |
 | 4. | ***YC*** | Type`git branch <descriptive_name-of-your-change>` to create a new branch. Type `git branch`. Where is `*`?|
-| 5. | ***YC*** | Type `git checkout <branch-descriptive-name-of-your-change>` to switch to the new branch. Type `git branch`.|
+| 5. | ***YC*** | Type `git checkout <branch-descriptive-name-of-your-change>` to switch to the new branch. Type `git branch`. See change in `*`.|
 | 6. | ***YC*** | Start making changes and testing them as you go. |
 | 7. | ***YC*** | Type `git add <filename.py>` to organize the files you have changed/created and would like to *commit*. |
 | 8. | ***YC*** | Type `git commit -m "<quick statement describing incremental change>"`.  |
-| 9. | ***YC*** | Type `git status` to understand what is committed, not committed, and not tracked. |
+| 9. | ***YC*** | Type `git status` to understand what is committed, not committed, and not tracked. Note your current branch from output.|
 | 10. | ***YC*** | Type `git push <your_fork_remote_name> <branch-descriptive-name-of-your-change>`. In this workflow `<your_fork_remote_name>` is likely `origin`. |
 
 *If you have extensive changes, then it is a good practice to *add*, *commit*, and *push* regularly so you don't loose work.*
