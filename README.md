@@ -62,7 +62,7 @@ Now your computer is setup to track your remote fork (default name `origin`) and
 
 *If you have extensive changes, then it is a good practice to *add*, *commit*, and *push* regularly so you don't loose work.*
 
-***Ready to merge your new code with the central repo***
+***Ready to merge your new code with the central repo on github.com***
 | Step No. | Where | Instruction |
 | -- | ----- | ----------- |
 | 1. | ***YG*** | There are multiple ways.  The easiest to explain: Click ***Pull requests*** and select ***New pull requests***.  You will see a GUI to decribe what which repo/branch that you want to move your specific repo/branch into. With the right most dropdown, select your pushed "feature branch".|   
@@ -80,7 +80,7 @@ For most cases you only need to change the branch on each side to match `<branch
 ***Practice code reviews on central***
 BLAH BLAH BLAH
 
-***Updating local repos to match most current version of the central repo***
+***Updating local repos to match most current version of the central repo as seen on github.com***
 | Step No. | Where | Instruction |
 | -- | ----- | ----------- |
 | 1. | ***YC*** | Type `git remote -v` to remind yourself of the remote names of the central repo and your fork of it. |
