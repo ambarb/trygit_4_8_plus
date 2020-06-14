@@ -43,16 +43,17 @@ Now your computer is setup to track your remote fork (default name `origin`) and
 ***Starting local contributions and submitting them***
 | Step No. | Where | Instruction |
 | -- | ----- | ----------- |
-| 1. ***GG***: Use ***Issues*** link to identify potential problems to help solve or start an *issue* on something you would like to contribute
-| 2. ***GG***: If an issue is not assigned to you, then pick/create an issue and self assign.
-3. ***YC***: Type `git pull origin master`
-4. ***YC***: Type`git branch <descriptive_name-of-your-change>` to create a new branch. Type `git branch`. Where is `*`?
-5. ***YC***: Type `git checkout <branch-descriptive-name-of-your-change>` to switch to the new branch. Type `git branch`.
-6. ***YC***: Start making changes and testing them as you go.
-7. ***YC***: Type `git add <filename.py>` to organize the files you have changed/created and would like to *commit*.
-8. ***YC***: Type `git commit -m "<quick statement describing incremental change>"`. 
-9. ***YC***: Type `git status` to understand what is committed, not committed, and not tracked.
-10. ***YC***: Type `git push <your_fork_remote_name> <branch-descriptive-name-of-your-change>`. In this workflow `<your_fork_remote_name>` is likely `origin`.
+| 1. | ***GG*** | Use ***Issues*** link to identify potential problems to help solve or start an *issue* on something you would like to contribute.|
+| 2. | ***GG*** | If an issue is not assigned to you, then pick/create an issue and self assign. |
+| 3. | ***YC*** | Type `git pull origin master`. |
+| 4. | ***YC*** | Type`git branch <descriptive_name-of-your-change>` to create a new branch. Type `git branch`. Where is `*`?|
+| 5. | ***YC*** | Type `git checkout <branch-descriptive-name-of-your-change>` to switch to the new branch. Type `git branch`.|
+| 6. | ***YC*** | Start making changes and testing them as you go. |
+| 7. | ***YC*** | Type `git add <filename.py>` to organize the files you have changed/created and would like to *commit*. |
+| 8. | ***YC*** | Type `git commit -m "<quick statement describing incremental change>"`.  |
+| 9. | ***YC*** | Type `git status` to understand what is committed, not committed, and not tracked. |
+| 10. | ***YC*** | Type `git push <your_fork_remote_name> <branch-descriptive-name-of-your-change>`. In this workflow `<your_fork_remote_name>` is likely `origin`. |
+
 *If you have extensive changes, then it is a good practice to *add*, *commit*, and *push* regularly so you don't loose work.*
 
 ***Ready to merge your new code with the central repo***
