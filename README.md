@@ -19,8 +19,8 @@ A simple mock up of a modular, nested python package for group collaboration. Th
 - Team messaging platform if working remotely
 - Link from organizer to team's custom repo with additional instructions
 ### Abbreviations
-- Group Git webpage (**GG**)
-- Your Git webpage (**YG**)
+- Group Git webpage of repo (**GG**)
+- Your Git webpage of forked repo (**YG**)
 - Your Computer (**YC**)
 ### Step by step
 ***Getting a local copy for future contributions via git***
@@ -30,8 +30,8 @@ A simple mock up of a modular, nested python package for group collaboration. Th
 | 2. | ***YG*** | Click ***Clone or Download*** and copy the the URL in the pop-up window |
 | 3. | ***YC*** | Open terminal window and navigate to where you want to save this repo |
 | 4. | ***YC*** | Type `git clone <paste_copied_url>`. `<paste_copied_url>` is something like `https://github.com/<your_git_uid>/<repo_name>.git`. |
-| 5. | ***YC*** | Type `cd <repo_name>`.  |
-| 6. | ***YC*** | Type `git remote add <repo_name> git://github.com/<repo_name>/<repo_name>.git`.  |
+| 5. | ***YC*** | Type `cd solarsys`.  |
+| 6. | ***YC*** | Type `git remote add solarsys git://github.com/<team_name>/solarsys.git`.  You can copy the link from *GG* like in set 2. |
 
 Now your computer is setup to track your remote fork (default name `origin`) and the remote central repo (`<repo_name>`). You can locally change the names if more convenient for you.  
 
