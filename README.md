@@ -60,7 +60,7 @@ Now your computer is setup to track your remote fork (default name `origin` or g
 | 10. | ***YC*** | Type `git status` to understand what is committed, not committed, and not tracked. Note your current branch from output.|
 | 11. | ***YC*** | Type `git push <your_fork_remote_name> <descriptive-name-of-your-change>`. In this workflow `<your_fork_remote_name>` is likely `origin`. |
 
-*If you have extensive changes, then it is a good practice to *add*, *commit*, and *push* regularly so you don't loose work.*
+*If you have extensive changes, then it is a good practice to *add*, *commit*, and *push* regularly so you don't lose work.*
 
 ***Ready to merge your new code with the central repo on github.com***
 | Step No. | Where | Instruction |
