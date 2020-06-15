@@ -5,7 +5,7 @@ A simple mock up of a modular, nested python package for group collaboration wit
 * `solarsys` is meant to represent a standalone ***repo***sitory
 * it is incomplete and imperfect by design but provides a "sandbox" to practice software development
 * use `trygit-4-8-plus` as a template to create your custom repo for a customized team experience
-* These participant instructions are designed as if you name your new repo `solarsys` but `<central_repo>` has been used in its place for easier customization.
+* These participant instructions are designed assuming your new repo name is `solarsys`, but `<central_repo>` has been used in the text below to provide easier editing for customization.
  
 # `<central_repo>`
 A simple mock up of a modular, nested python package for group collaboration. The project is a sandbox for gaining experience with collaborative coding projects and provides opportunites to develop and practice more advanced skills.  
