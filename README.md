@@ -38,21 +38,21 @@ A simple mock up of a modular, nested python ***repo***sitiory for group collabo
 | 6. | ***YC*** | Type `git remote add <repo_name> git://github.com/<team_name>/<repo_name>.git`.  You can copy the link from *GG* like in set 2. |
 | 7. | ***YC*** | Type `git remote -v`. Note the remote names represent what is on github.com. |
 
-Now your computer is setup to track your remote fork (default name `origin` or generically here `<your_fork_remote_name>`) and the remote central repo (`<repo_name>`). You can change the names representing the remotes if more convenient for you.  But this tutorial assumes you have not done this.
+Now your computer is setup to track your remote fork (default `origin` or generically `<your_fork_remote_name>`) and the remote central repo (`<repo_name>`). You can change the names representing the remotes if more convenient for you.  But this tutorial assumes you have not done this.
 
 ***Test the library by starting a python session and importing the library.*** No python packaging has been performed. If you are having trouble, maybe an ***Issues*** exists on the ***GG*** that you can use.
 
 ***Things to know before you start changing files***
 - Do not locally *commit* and *push* changes to the central repo. Use your fork for this purpose.
 - Git commands to check things before committing: `git status`, `git remote -v`, and `git branch`.
-- Use `git commit` and `git push` regulary to track incremental changes for your future self and not lose work on your "feature" branch.
-- If you get stuck or confused, see links at bottom that provide more details but `git reset` and `git rm` can be useful.
+- Use `git commit` and `git push` regulary to track incremental changes for your future self and backup your work.
+- If you get stuck or confused, see the links at the bottom for more details, but `git rm` can be useful if you *commit* something by accident.
 
 ***Starting local contributions and submitting them using a feature branch*** 
 | Step No. | Where | Instruction |
 | -- | ----- | ----------- |
 | 1. | ***GG*** | Use ***Issues*** link to identify potential problems to help solve or start an *issue* on something you would like to contribute.|
-| 2. | ***GG*** | If an issue is not assigned to you, then pick/create an issue and self assign using the web interface. |
+| 2. | ***GG*** | If an issue is not assigned to you, then pick/[create](https://help.github.com/en/github/managing-your-work-on-github/opening-an-issue-from-code) an issue and self assign using the web interface. |
 | 3. | ***YC*** | Here, we skip making sure both remote master branches are up to date locally. We will practice this later. |
 | 4. | ***YC*** | Type`git branch <descriptive-name-of-your-change>` to create a new branch (or editable "copy"). Type `git branch`. Where is `*`?|
 | 5. | ***YC*** | Type `git checkout <descriptive-name-of-your-change>` to switch to the new feature branch. Type `git branch`. See change in `*`.|
@@ -68,12 +68,12 @@ Now your computer is setup to track your remote fork (default name `origin` or g
 ***Ready to merge your new code with the central repo on github.com***
 | Step No. | Where | Instruction |
 | -- | ----- | ----------- |
-| 1. | ***YG*** | There are multiple ways.  The easiest to explain is click ***Pull requests*** and select ***New pull requests***.  You will see a GUI to decribe which repo/branch that you want to move your forked repo/branch into. With the right most dropdown, select your pushed "feature branch".|   
+| 1. | ***YG*** | There are multiple ways.  The easiest to explain is click ***Pull requests*** and select ***New pull requests***.  You will see a GUI to decribe which repo/branch (base) that accept new changes from your forked repo/branch. With the right most dropdown, select your pushed "feature branch" instead of "master".|   
 |    |          | ***BASE*** Remote(Fork), Branch  <<--  ***HEAD*** Remote(Fork), Branch|
 |    |*probably*| `<repo_name> master` <<-- `<forked_solarsys> <descriptive-name-of-your-change>`|
 | 2. | ***YG*** | Click ***Submit***.  |
-| 3. | ***GG*** | You will be routed to ***Pull requests*** of the central repo. Select reviewers. You may have instructions on this already or confer with the team to decide a policy.  |
-| 4. | ***GG*** | Click ***Issues***, open "your" issue and a comment referencing your new *PR*. |
+| 3. | ***GG*** | You will be routed to ***Pull requests*** of the central repo. [Add](https://help.github.com/en/github/writing-on-github/autolinked-references-and-urls) more details. Select reviewers. You may have instructions on this already or confer with the team to decide a policy.  |
+| 4. | ***GG*** | Click ***Issues***, open "your" issue and add comment referencing your new *PR*. |
 | 5. | ***GG*** | Interact with reviewers and other interested parties on github as much as possible in the *PR*. |
 | 6. | ***YC*** | If you have new changes in response to the *PR* review before it is *merged*, then you can continue to *add*, *commit*, and *push* on your `<branch-descriptive-name-of-your-change>`. The associated *PR* will update automatically.|
 | 7. | ***GG*** | If you have ***Merge*** privileges, then confer with team on its self-merge policy. |
