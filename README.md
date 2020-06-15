@@ -73,13 +73,13 @@ Now your computer is setup to track your remote fork (default `origin` or generi
 |    |*probably*| `<repo_name> master` <<-- `<forked_solarsys> <descriptive-name-of-your-change>`|
 | 2. | ***YG*** | Click ***Create pull request***. [Add](https://help.github.com/en/github/writing-on-github/autolinked-references-and-urls) more details (like referencing issue). Select ***Create pull request***. |
 | 3. | ***GG*** | You will be routed to ***Pull requests*** of the central repo. Select reviewers. You may have instructions on this already or confer with the team to decide a policy.  |
-| 4. | ***GG*** | Click ***Issues***, open "your" issue and add comment referencing your new *PR*. |
+| 4. | ***GG*** | Click ***Issues***, open "your" issue and [add](https://help.github.com/en/github/writing-on-github/autolinked-references-and-urls) comment referencing your new *PR*. |
 | 5. | ***GG*** | Interact with reviewers and other interested parties on github as much as possible in the *PR*. |
 | 6. | ***YC*** | If you have new changes in response to the *PR* review before it is *merged*, then you can continue to *add*, *commit*, and *push* on your `<branch-descriptive-name-of-your-change>`. The associated *PR* will update automatically.|
 | 7. | ***GG*** | If you have ***Merge*** privileges, then confer with team on its self-merge policy. |
 
 ***Practice code reviews on central repo***
-For private repos, there may be not notifciation on a request to review.  In this case, navigate to the central repo's github page and select ***Pull requests***.  You may see your avatar on the right.  Additionally, you can hover over each PR link to see if you have been assigned something.  Click on those links and the next steps will most likely be highlighted.
+For private repos, there may be not notifciation on a request to review.  In this case, navigate to the central repo's github page (***GG***) and select ***Pull requests***.  You may see your avatar on the right.  Additionally, you can hover over each PR link to see if you have been assigned something.  Click on those links and the next steps will most likely be highlighted.
 
 ***Updating local repos to match most current version of the central repo as seen on github.com***
 | Step No. | Where | Instruction |
@@ -88,21 +88,21 @@ For private repos, there may be not notifciation on a request to review.  In thi
 | 2. | ***YC*** | Type `git fetch <remote_name_central_repo>`. |
 | 3. | ***YC*** | Type `git checkout master` to switch to your fork's local master branch.|
 | 4. | ***YC*** | Type `git merge <remote_name_central_repo>/master` to update your fork's local master branch. |
-| 5. | ***YC*** | Type `git push <remote_name_fork_of_central> master` to update the github version with the local version of your master branch.  Now the github master branches of the central repo and your fork are identical. |
+| 5. | ***YC*** | Type `git push <remote_name_fork_of_central> master` to update the github version with the local version of your fork's master branch.  Now the github master branches of the central repo and your fork are identical. |
 
-From here, further development is easiest if you create new central branches instead of using older ones.  `git branch -d <feature_branch>` can be used to clean up your local feature branches.  
+From here, further development is easiest if you create new central branches instead of using older ones.  `git branch -d <feature_branch>` can be used to clean up the display of your local feature branches.  
 
 ***Updating an in progress feature branch with the central repo as seen on github.com***
-*This is usually not required and the method here is probably not recommended by professionals. This task can get complicated, especially if changing the same file (and more so the same lines). If you proceed with this method, then you will lose uncomitted changes.  Professionals will `rebase` instead.  The good news is that this repo is designed to make a mess and learn how git works!*
+*This is usually not required and the method here is probably not recommended by professionals. This task can get complicated, especially if changing the same file (and more so the same lines). If you proceed with this method, then you will lose uncomitted changes.  Professionals will `rebase` instead and this method may create unwanted issue.  The good news is that this repo is designed to make a mess and learn how git works!*
 | Step No. | Where | Instruction |
 | -- | ----- | ----------- |
 | 1. | ***YC*** | Complete the steps above to make sure both remote master branches match (central repo and fork of central repo). |
 | 2. | ***YC*** | Use `git checkout <feature_branch_name>` and make you have committed all of your changes that you want to retain. |
 | 3. | ***YC*** | Type `git push <remote_name_fork_of_central> master` and edit the merge request (vi editor). Upon closing and saving of this file, the feature branch will be updated. |
 
-***More advanced development*** The instructions outlined above can be used as a reference in the future. In addition, this project can be developed to add more complexity to the code with a richer description of our solar system. Finally, the this project has room for more advanced practice of software carpentry skills: python packaging, version tagging, unit tests, code style requirements, json templating, and more.  
+***More advanced development*** The instructions outlined above can be used as a reference in the future. In addition, this project can be developed to add more complexity to the code with a richer description of our solar system or provide enhanced functionality (display pretty tables or create binder website). Finally, this project has room for more advanced practice of software carpentry skills: python packaging, version tagging, unit tests, code style requirements, json templating, and more.  
 
-## Highlights
+## Take home 
 1. Typically there is never a need to pull from your fork's remote master.
 2. Never push to the central repo's remote master. Use ***Pull requests*** after pushing your fork's feature branch to its remote.
 3. If you are instructed by git to `rebase`, decline if possible and research futher.  See `scikit-beam`s recommendations as a starting point for its discussion.  Use `rebase` instead of pulling from the central repo's master branch to your fork's feature branch.
