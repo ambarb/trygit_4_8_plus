@@ -97,12 +97,12 @@ From here, further development is easiest if you create new central branches ins
 | 2. | ***YC*** | Use `git checkout <feature_branch_name>` and make you have committed all of your changes that you want to retain. |
 | 3. | ***YC*** | Type `git push <remote_name_fork_of_central> master` and edit the merge request (vi editor). Upon closing and saving of this file, the feature branch will be updated. |
 
-***More advanced development*** The instrucitons outlined above can serves as first time use instructions and as a reference for the future. In addition, solarsys can be developed to add more complexity to the code with a richer desciprtion of our solar system. Finally, the solarsys project has room for more advanced practice of software carpentry tools: python packaing, version tagging, unit tests, code style requirements, json templating, and more.  
+***More advanced development*** The instructions outlined above can be used as a reference in the future. In addition, this project can be developed to add more complexity to the code with a richer description of our solar system. Finally, the this project has room for more advanced practice of software carpentry skills: python packaging, version tagging, unit tests, code style requirements, json templating, and more.  
 
 ## Highlights
 1. Typically there is never a need to pull from your fork's remote master.
 2. Never push to the central repo's remote master. Use ***Pull requests*** after pushing your fork's feature branch to its remote.
-3. If you are instrcuted by git to `rebase`, decline if possible and research futher.  See `scikit-beam`s recommendations as a starting point for its discussion.  Use `rebase` instead of pulling from the central repo's master branch to your fork's feature branch.
+3. If you are instructed by git to `rebase`, decline if possible and research futher.  See `scikit-beam`s recommendations as a starting point for its discussion.  Use `rebase` instead of pulling from the central repo's master branch to your fork's feature branch.
 
 ### Reference Materials: 
 *For your implementation of this template or in your future projects.*
