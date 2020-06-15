@@ -71,8 +71,8 @@ Now your computer is setup to track your remote fork (default `origin` or generi
 | 1. | ***YG*** | There are multiple ways.  The easiest to explain is click ***Pull requests*** and select ***New pull requests***.  You will see a GUI to decribe which repo/branch (base) that accept new changes from your forked repo/branch. With the right most dropdown, select your pushed "feature branch" instead of "master".|   
 |    |          | ***BASE*** Remote(Fork), Branch  <<--  ***HEAD*** Remote(Fork), Branch|
 |    |*probably*| `<repo_name> master` <<-- `<forked_solarsys> <descriptive-name-of-your-change>`|
-| 2. | ***YG*** | Click ***Submit***.  |
-| 3. | ***GG*** | You will be routed to ***Pull requests*** of the central repo. [Add](https://help.github.com/en/github/writing-on-github/autolinked-references-and-urls) more details. Select reviewers. You may have instructions on this already or confer with the team to decide a policy.  |
+| 2. | ***YG*** | Click ***Create pull request***. [Add](https://help.github.com/en/github/writing-on-github/autolinked-references-and-urls) more details (like referencing issue). Select ***Create pull request***. |
+| 3. | ***GG*** | You will be routed to ***Pull requests*** of the central repo. Select reviewers. You may have instructions on this already or confer with the team to decide a policy.  |
 | 4. | ***GG*** | Click ***Issues***, open "your" issue and add comment referencing your new *PR*. |
 | 5. | ***GG*** | Interact with reviewers and other interested parties on github as much as possible in the *PR*. |
 | 6. | ***YC*** | If you have new changes in response to the *PR* review before it is *merged*, then you can continue to *add*, *commit*, and *push* on your `<branch-descriptive-name-of-your-change>`. The associated *PR* will update automatically.|
