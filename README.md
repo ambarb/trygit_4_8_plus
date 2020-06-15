@@ -7,51 +7,53 @@ A simple mock up of a modular, nested python package for group collaboration wit
 * use `trygit-4-8-plus` as a template to create your custom repo for a customized team experience
 * These participant instructions are designed assuming your new repo name is `solarsys`, but `<central_repo>` has been used in the text below to provide easier editing for customization.
  
-# `<central_repo>`
-A simple mock up of a modular, nested python package for group collaboration. The project is a sandbox for gaining experience with collaborative coding projects and provides opportunites to develop and practice more advanced skills.  
+# solarsys
+A simple mock up of a modular, nested python ***repo***sitiory for group collaboration. The `<repo_name>` project is a sandbox for gaining experience with collaborative coding projects and provides opportunites to develop and practice more advanced skills.  
  
 ## Instructions for using solarsys to learn more about git
 *See the bottom of this document to find some common **Reference Materials**.* 
 ### Requirements
-- Each particpate has a github account
-- Each particpate has git installed on their computer
-- Each particpate has python on their computer 
+- Each participant has a github account
+- Each participant has git installed on their computer
+- Each participant has python on their computer 
 - Team messaging platform if working remotely
-- Link from organizer to team's custom repo with additional instructions
+- Link from organizer to the team's custom repo with additional instructions --> `<team_name>/<repo_name>`
 ### Abbreviations
-- Group Git webpage of repo (**GG**)
+- Group Git webpage of the central repo (**GG**)
 - Your Git webpage of forked repo (**YG**)
 - Your Computer (**YC**)
+
+
 ### Step by step
+*Use ***YG*** and git status in between steps as you go to underand how git works.*
 ***Getting a local copy for future contributions via git***
 | Step No. | Where | Instruction |
 | -- | ----- | ----------- |
-| 1. | ***GG*** | Click ***Fork*** (top left) and select your github username |
-| 2. | ***YG*** | Click ***Clone or Download*** and copy the the URL in the pop-up window |
-| 3. | ***YC*** | Open terminal window and navigate to where you want to save this repo |
+| 1. | ***GG*** | With the provided link, click ***Fork*** (top left) and select your github username. |
+| 2. | ***YG*** | Click ***Clone or Download*** and copy the the URL in the pop-up window. |
+| 3. | ***YC*** | Open terminal window and navigate to where you want to save this repo. |
 | 4. | ***YC*** | Type `git clone <paste_copied_url>`. `<paste_copied_url>` is something like `https://github.com/<your_git_uid>/<repo_name>.git`. |
-| 5. | ***YC*** | Type `cd <repo_name>`.  |
+| 5. | ***YC*** | Type `cd <repo_name>`. You should find `solarsys.py` in this directory level. |
 | 6. | ***YC*** | Type `git remote add <repo_name> git://github.com/<team_name>/<repo_name>.git`.  You can copy the link from *GG* like in set 2. |
-| 7. | ***YC*** | Type `git remote -v`. |
+| 7. | ***YC*** | Type `git remote -v`. Note the remote names represent what is on github.com. |
 
 Now your computer is setup to track your remote fork (default name `origin` or generically here `<your_fork_remote_name>`) and the remote central repo (`<repo_name>`). You can change the names representing the remotes if more convenient for you.  But this tutorial assumes you have not done this.
 
-***Test the library by starting a python session and importing the library.*** No python packaging has been performed. To test as is on your computer, start your python session, navigate to the repo directory and `import solarsy`.
+***Test the library by starting a python session and importing the library.*** No python packaging has been performed. If you are having trouble, maybe an ***Issues*** exists on the ***GG*** that you can use.
 
 ***Things to know before you start changing files***
 - Do not locally *commit* and *push* changes to the central repo. Use your fork for this purpose.
-- It is best to never *commit* work on the master branch. The central repo and its forks can have different "copies" called branches. 
-- Git commands to check things before committing: `git status`, `git remote -v`, `git branch`
+- Git commands to check things before committing: `git status`, `git remote -v`, and `git branch`.
 - Use `git commit` and `git push` regulary to track incremental changes for your future self and not lose work on your "feature" branch.
-- If you get stuck or confused, see links at bottom that provide more details.
+- If you get stuck or confused, see links at bottom that provide more details but `git reset` and `git rm` can be useful.
 
-***Starting local contributions and submitting them using a feature branch***
+***Starting local contributions and submitting them using a feature branch*** 
 | Step No. | Where | Instruction |
 | -- | ----- | ----------- |
 | 1. | ***GG*** | Use ***Issues*** link to identify potential problems to help solve or start an *issue* on something you would like to contribute.|
 | 2. | ***GG*** | If an issue is not assigned to you, then pick/create an issue and self assign using the web interface. |
 | 3. | ***YC*** | Here, we skip making sure both remote master branches are up to date locally. We will practice this later. |
-| 4. | ***YC*** | Type`git branch <descriptive-name-of-your-change>` to create a new branch. Type `git branch`. Where is `*`?|
+| 4. | ***YC*** | Type`git branch <descriptive-name-of-your-change>` to create a new branch (or editable "copy"). Type `git branch`. Where is `*`?|
 | 5. | ***YC*** | Type `git checkout <descriptive-name-of-your-change>` to switch to the new feature branch. Type `git branch`. See change in `*`.|
 | 6. | ***YC*** | Start making changes and testing them as you go. |
 | 7. | ***YC*** | Type `git add <filename.py>` to organize the files you have changed/created and would like to *commit*. |
