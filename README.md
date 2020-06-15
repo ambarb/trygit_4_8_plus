@@ -42,7 +42,7 @@ Now your computer is setup to track your remote fork (default name `origin` or g
 - Do not locally *commit* and *push* changes to the central repo. Use your fork for this purpose.
 - It is best to never *commit* work on the master branch. The central repo and its forks can have different "copies" called branches. 
 - Git commands to check things before committing: `git status`, `git remote -v`, `git branch`
-- Use `git commit` and `git push` regulary to track incremental changes and not loose work on your "feature" branch.
+- Use `git commit` and `git push` regulary to track incremental changes for your future self and not lose work on your "feature" branch.
 - If you get stuck or confused, see links at bottom that provide more details.
 
 ***Starting local contributions and submitting them using a feature branch***
