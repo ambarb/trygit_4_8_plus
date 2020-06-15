@@ -25,7 +25,8 @@ A simple mock up of a modular, nested python ***repo***sitiory for group collabo
 
 
 ### Step by step
-*Use ***YG*** and git status in between steps as you go to underand how git works.*
+*Check ***YG***, ***GG***, and `git status` in between steps as you go to underand how git works.*
+
 ***Getting a local copy for future contributions via git***
 | Step No. | Where | Instruction |
 | -- | ----- | ----------- |
