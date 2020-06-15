@@ -90,7 +90,7 @@ For private repos, there may be not notifciation on a request to review.  In thi
 From here, further development is easiest if you create new central branches instead of using older ones.  `git branch -d <feature_branch>` can be used to clean up your local feature branches.  
 
 ***Updating an in progress feature branch with the central repo as seen on github.com***
-*This is usually not required and the method here is probably not recommended by professionals. This task can get complicated, especially if changing the same file (and more so the same lines). If you proceed with this method, then you will loose uncomitted changes.  Professionals will `rebase` instead.  The good news is that this repo is designed to make a mess and learn how git works!*
+*This is usually not required and the method here is probably not recommended by professionals. This task can get complicated, especially if changing the same file (and more so the same lines). If you proceed with this method, then you will lose uncomitted changes.  Professionals will `rebase` instead.  The good news is that this repo is designed to make a mess and learn how git works!*
 | Step No. | Where | Instruction |
 | -- | ----- | ----------- |
 | 1. | ***YC*** | Complete the steps above to make sure both remote master branches match (central repo and fork of central repo). |
